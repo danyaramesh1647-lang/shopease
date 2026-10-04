@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ShopEase</h1>
+    <input type="text" id="search" placeholder="Search products...">
+    <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <section class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="clothing">Clothing</button>
+    <button class="filter-btn" data-category="electronics">Electronics</button>
+    <button class="filter-btn" data-category="accessories">Accessories</button>
+  </section>
+
+  <main>
+    <div id="product-list"></div>
+  </main>
+
+  <aside id="cart-panel">
+    <div class="cart-top">
+      <h2>Your Cart</h2>
+      <button id="close-cart">X</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-bottom">
+      <p>Total: <strong>Rs. <span id="cart-total">0</span></strong></p>
+      <button id="checkout-btn">Checkout</button>
+      <button id="clear-btn">Clear Cart</button>
+    </div>
+  </aside>
+
+  <div id="overlay"></div>
+
+  <footer>
+    <p>&copy; 2026 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
